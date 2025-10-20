@@ -1,0 +1,103 @@
+body {
+  background-color: GhostWhite;
+  color: black;
+  overflow: hidden;
+  user-select: none;
+}
+
+.timeout-message {
+  color: red;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid red;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.layout {
+  display: grid;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  /* width: 100%; */
+  /* display: flex; */
+  /* background-color: auto; */
+  /* align-content: center; */
+  /* user-select: none; */
+  /* min-width: 50%; */
+}
+
+.hidden {
+  display: none;
+}
+
+#tempSpan {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  opacity: 50%;
+  margin-left: -8px;
+  margin-top: -8px;
+  cursor: var(--mouseIconColor), auto;
+  z-index: 1;
+}
+
+/* ********************************************************** */
+
+.loginContainer {
+  color: black;
+  position: fixed;
+  line-height: 20px;
+  padding: 15px;
+  background-color: #b4a7d6;
+  border-radius: 5%;
+  border-color: gray;
+  border-style: solid;
+  box-shadow: 0px 0px 10px gray;
+  text-align: center;
+  width: 25%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.loginContainer input[type=password],
+.loginContainer input[type=text] {
+  border: none;
+  width: 100%;
+  height: 50px;
+  padding: 0%;
+  font-size: medium;
+}
+
+.loginContainer h1 {
+  margin: 20px;
+  padding-bottom: 10px;
+}
+
+#submitLogin, #submitSignUp {
+  border: none;
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: medium;
+  background-color: rgb(36, 147, 36);
+  color: azure;
+
+}
+
+#signUpButton {
+  border: none;
+  width: 25%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: medium;
+  background-color: rgb(106, 205, 228);
+  color: azure;
+
+}
